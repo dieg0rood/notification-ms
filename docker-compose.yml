@@ -18,7 +18,7 @@ services:
     image: mysql:5.7
     container_name: hyperf-mysql
     volumes:
-      - mysql-data:/var/lib/mysql
+      - ./hyperf-mysql-data:/var/lib/mysql
     ports:
       - 3350:3306
     environment:
