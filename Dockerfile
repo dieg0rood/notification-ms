@@ -51,4 +51,5 @@ RUN composer install --no-dev -o && php bin/hyperf.php
 
 EXPOSE 9501
 
-ENTRYPOINT ["php", "/var/www/bin/hyperf.php", "start"]
+ENTRYPOINT ["tail", "-f", "/dev/null"]
+#ENTRYPOINT ["php", "/var/www/bin/hyperf.php", "start"]
