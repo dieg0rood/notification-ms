@@ -14,3 +14,5 @@ vendor/
 .vscode/
 /phpstan.neon
 /phpunit.xml
+hyperf-mysql-data/
+hyperf-redis-data/

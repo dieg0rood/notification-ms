@@ -10,8 +10,10 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 use Hyperf\HttpServer\Router\Router;
+use App\Infra\Controller\NotificationController;
 
-Router::addRoute(['GET', 'POST', 'HEAD'], '/', 'App\Controller\IndexController@index');
+
+Router::get('/', [NotificationController::class, 'diego']);
 
 Router::get('/favicon.ico', function () {
     return '';
